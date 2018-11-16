@@ -15,17 +15,18 @@
     localStorage.setItem("message", message);
   });
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-  }
+  // if ('serviceWorker' in navigator) {
+  //   navigator.serviceWorker
+  //            .register('./service-worker.js')
+  //            .then(function() { console.log('Service Worker Registered'); });
+  // }
 
   // uncomment to reset the dates array.
   // var dates = [];
   // localStorage.setItem('dates',JSON.stringify(dates));
 
-  var dates = JSON.parse(localStorage.getItem('dates'));
+  var dates = JSON.parse(localStorage.getItem('dates')) || [];
+
 
   var $input = $('#picker').pickadate();
   var picker = $input.pickadate('picker');
@@ -51,6 +52,7 @@
 
   var updateSince = function()
   {
+    if (!dates) return;
     var now = moment();
     var then = moment(dates[0]);
     var since = now.diff(then, "weeks");
