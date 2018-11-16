@@ -1,7 +1,7 @@
 var dataCacheName = 'haircuts';
 var cacheName = 'haircuts';
 var filesToCache = [
-  '/',
+  // '/',
  // "./images",
  // "./images/icons",
  "./images/icons/icon-128x128.png",
