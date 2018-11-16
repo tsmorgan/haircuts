@@ -1,0 +1,46 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align:center;
+}
+button {
+  background:green;
+  color:white;
+  font-size:19px;
+  padding:0.5em 1em;
+  border-radius:0.25em;
+  border:none;
+  border-bottom:0.1em solid black;
+  outline-style: none;
+}
+button:hover {
+  background:darkgreen;
+}
+button:active {
+  border:none;
+  position:relative;
+  top:0.1em;
+
+}
+.buttonbox {
+  text-align:center;
+  padding:50px;
+}
+.hidden {
+  display:none;
+}
+#prev {
+  width:100%;
+}
+#prev td {
+  padding:0.5em;
+}
+#picker {
+  font-size:19px;
+  padding:10px;
+  border:1px solid black;
+}
+#ago {
+  margin-top:10px;
+  font-size:26px;
+  font-weight: bold;
+}

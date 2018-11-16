@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haircuts</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/picker-classic.css">
+    <link rel="stylesheet" type="text/css" href="styles/picker-classic.date.css">
+
+    <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts/moment.min.js"></script>
+    <script type="text/javascript" src="scripts/picker.js"></script>
+    <script type="text/javascript" src="scripts/picker.date.js"></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Template PWA">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <!-- Windows -->
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#B58840">
+
+    <link rel="icon"
+         type="image/png"
+         href="images/icons/icon-144x144.png">
+  </head>
+  <body>
+
+    <p style="margin-bottom:0">last haircut</p>
+    <p id="ago"></p>
+
+    <hr />
+
+    <div class="datesbox">
+      <table id="prev">
+        <tr id="template">
+          <td class="date">template</td>
+          <td><a href="#" class="delete">delete</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+
+    <div class="buttonbox">
+      <div style="position:relative">
+        <input id="picker" name="" class="fieldset__input js__datepicker picker__input" type="text" placeholder="Try me…">
+      </div>
+      <p><button id="newdate">Add date</button></p>
+    </div>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
